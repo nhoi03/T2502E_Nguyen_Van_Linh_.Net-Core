@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("T2502E_Nguyen_Van_Linh_dotNet-Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5f7ae21b49a145425a0b1c20a093475018c3b7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("T2502E_Nguyen_Van_Linh_dotNet-Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("T2502E_Nguyen_Van_Linh_dotNet-Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

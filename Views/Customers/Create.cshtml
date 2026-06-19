@@ -1,0 +1,18 @@
+@model T2502E_Nguyen_Van_Linh_dotNet_Core.Models.Customer
+
+<h2>Add Customer</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label>Full Name</label>
+        <input asp-for="FullName" class="form-control"/>
+    </div>
+
+    <div class="mb-3">
+        <label>Phone Number</label>
+        <input asp-for="PhoneNumber" class="form-control"/>
+    </div>
+
+    <button class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>

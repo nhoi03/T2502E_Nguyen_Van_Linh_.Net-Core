@@ -108,3 +108,4 @@ C:\Users\Admin\RiderProjects\T2502E_Nguyen_Van_Linh_dotNet-Core\T2502E_Nguyen_Va
 C:\Users\Admin\RiderProjects\T2502E_Nguyen_Van_Linh_dotNet-Core\T2502E_Nguyen_Van_Linh_dotNet-Core\obj\Debug\net8.0\T2502E_Nguyen_Van_Linh_dotNet-Core.pdb
 C:\Users\Admin\RiderProjects\T2502E_Nguyen_Van_Linh_dotNet-Core\T2502E_Nguyen_Van_Linh_dotNet-Core\obj\Debug\net8.0\T2502E_Nguyen_Van_Linh_dotNet-Core.genruntimeconfig.cache
 C:\Users\Admin\RiderProjects\T2502E_Nguyen_Van_Linh_dotNet-Core\T2502E_Nguyen_Van_Linh_dotNet-Core\obj\Debug\net8.0\ref\T2502E_Nguyen_Van_Linh_dotNet-Core.dll
+C:\Users\Admin\RiderProjects\T2502E_Nguyen_Van_Linh_dotNet-Core\T2502E_Nguyen_Van_Linh_dotNet-Core\obj\Debug\net8.0\T2502E_Nguyen_Van_Linh_dotNet-Core.sourcelink.json

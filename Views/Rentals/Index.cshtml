@@ -1,0 +1,39 @@
+@model IEnumerable<T2502E_Nguyen_Van_Linh_dotNet_Core.Models.Rental>
+
+<h2>Rentals</h2>
+
+<a asp-action="Create" class="btn btn-primary mb-3">Create Rental</a>
+<a asp-controller="ComicBooks" asp-action="Index" class="btn btn-secondary mb-3">Back</a>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Customer</th>
+        <th>Rental Date</th>
+        <th>Return Date</th>
+        <th>Status</th>
+        <th>Comic Books</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var rental in Model)
+    {
+        <tr>
+            <td>@rental.Customer?.FullName</td>
+            <td>@rental.RentalDate.ToString("dd/MM/yyyy")</td>
+            <td>@rental.ReturnDate.ToString("dd/MM/yyyy")</td>
+            <td>@rental.Status</td>
+            <td>
+                @foreach (var detail in rental.RentalDetails ?? new List<T2502E_Nguyen_Van_Linh_dotNet_Core.Models.RentalDetail>())
+                {
+                    <div>
+                        @detail.ComicBook?.Title -
+                        Qty: @detail.Quantity -
+                        Price/day: @detail.PricePerDay
+                    </div>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

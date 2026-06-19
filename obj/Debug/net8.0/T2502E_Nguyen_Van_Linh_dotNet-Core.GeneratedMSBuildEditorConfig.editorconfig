@@ -18,12 +18,36 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Admin\RiderProjects\T2502E_Nguyen_Van_Linh_dotNet-Core\T2502E_Nguyen_Van_Linh_dotNet-Core
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/RiderProjects/T2502E_Nguyen_Van_Linh_dotNet-Core/T2502E_Nguyen_Van_Linh_dotNet-Core/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Admin/RiderProjects/T2502E_Nguyen_Van_Linh_dotNet-Core/T2502E_Nguyen_Van_Linh_dotNet-Core/Views/ComicBooks/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWNCb29rc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/RiderProjects/T2502E_Nguyen_Van_Linh_dotNet-Core/T2502E_Nguyen_Van_Linh_dotNet-Core/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Admin/RiderProjects/T2502E_Nguyen_Van_Linh_dotNet-Core/T2502E_Nguyen_Van_Linh_dotNet-Core/Views/ComicBooks/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWNCb29rc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/RiderProjects/T2502E_Nguyen_Van_Linh_dotNet-Core/T2502E_Nguyen_Van_Linh_dotNet-Core/Views/ComicBooks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29taWNCb29rc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/RiderProjects/T2502E_Nguyen_Van_Linh_dotNet-Core/T2502E_Nguyen_Van_Linh_dotNet-Core/Views/Customers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/RiderProjects/T2502E_Nguyen_Van_Linh_dotNet-Core/T2502E_Nguyen_Van_Linh_dotNet-Core/Views/Customers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/RiderProjects/T2502E_Nguyen_Van_Linh_dotNet-Core/T2502E_Nguyen_Van_Linh_dotNet-Core/Views/Rentals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/RiderProjects/T2502E_Nguyen_Van_Linh_dotNet-Core/T2502E_Nguyen_Van_Linh_dotNet-Core/Views/Rentals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/RiderProjects/T2502E_Nguyen_Van_Linh_dotNet-Core/T2502E_Nguyen_Van_Linh_dotNet-Core/Views/Reports/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/RiderProjects/T2502E_Nguyen_Van_Linh_dotNet-Core/T2502E_Nguyen_Van_Linh_dotNet-Core/Views/Shared/Error.cshtml]

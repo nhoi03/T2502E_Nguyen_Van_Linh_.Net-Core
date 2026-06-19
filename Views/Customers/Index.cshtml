@@ -1,0 +1,26 @@
+@model IEnumerable<T2502E_Nguyen_Van_Linh_dotNet_Core.Models.Customer>
+
+<h2>Customers</h2>
+
+<a asp-action="Create" class="btn btn-primary mb-3">Add Customer</a>
+<a asp-controller="ComicBooks" asp-action="Index" class="btn btn-secondary mb-3">Back</a>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Full Name</th>
+        <th>Phone Number</th>
+        <th>Registration Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FullName</td>
+            <td>@item.PhoneNumber</td>
+            <td>@item.RegistrationDate.ToString("dd/MM/yyyy")</td>
+        </tr>
+    }
+    </tbody>
+</table>

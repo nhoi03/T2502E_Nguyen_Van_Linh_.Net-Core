@@ -1,23 +1,34 @@
-﻿@model T2502E_Nguyen_Van_Linh_dotNet_Core.Models.ComicBook
+﻿@model IEnumerable<T2502E_Nguyen_Van_Linh_dotNet_Core.Models.ComicBook>
 
-<h2>Add Comic Book</h2>
+<h2>Comic Books</h2>
 
-<form asp-action="Create" method="post">
-    <div class="mb-3">
-        <label>Title</label>
-        <input asp-for="Title" class="form-control"/>
-    </div>
+<a asp-action="Create" class="btn btn-primary mb-3">Add Comic Book</a>
+<a asp-controller="Customers" asp-action="Index" class="btn btn-secondary mb-3">Customers</a>
+<a asp-controller="Rentals" asp-action="Index" class="btn btn-success mb-3">Rentals</a>
+<a asp-controller="Reports" asp-action="Index" class="btn btn-warning mb-3">Reports</a>
 
-    <div class="mb-3">
-        <label>Author</label>
-        <input asp-for="Author" class="form-control"/>
-    </div>
-
-    <div class="mb-3">
-        <label>Price Per Day</label>
-        <input asp-for="PricePerDay" class="form-control"/>
-    </div>
-
-    <button class="btn btn-primary">Save</button>
-    <a asp-action="Index" class="btn btn-secondary">Back</a>
-</form>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Price Per Day</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Author</td>
+            <td>@item.PricePerDay</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ComicBookId" class="btn btn-sm btn-warning">Edit</a>
+                <a asp-action="Delete" asp-route-id="@item.ComicBookId" class="btn btn-sm btn-danger"
+                   onclick="return confirm('Delete this comic book?')">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

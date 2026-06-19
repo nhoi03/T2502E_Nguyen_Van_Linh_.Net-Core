@@ -1,8 +1,10 @@
 ﻿@model T2502E_Nguyen_Van_Linh_dotNet_Core.Models.ComicBook
 
-<h2>Add Comic Book</h2>
+<h2>Edit Comic Book</h2>
 
-<form asp-action="Create" method="post">
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ComicBookId"/>
+
     <div class="mb-3">
         <label>Title</label>
         <input asp-for="Title" class="form-control"/>
@@ -18,6 +20,6 @@
         <input asp-for="PricePerDay" class="form-control"/>
     </div>
 
-    <button class="btn btn-primary">Save</button>
+    <button class="btn btn-primary">Update</button>
     <a asp-action="Index" class="btn btn-secondary">Back</a>
 </form>

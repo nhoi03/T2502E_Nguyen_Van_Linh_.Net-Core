@@ -1,0 +1,58 @@
+@model IEnumerable<T2502E_Nguyen_Van_Linh_dotNet_Core.Models.Rental>
+
+<h2>Rental Report</h2>
+
+<form method="get" class="row mb-3">
+    <div class="col-md-4">
+        <label>From Date</label>
+        <input type="date" name="fromDate" value="@ViewBag.FromDate" class="form-control"/>
+    </div>
+
+    <div class="col-md-4">
+        <label>To Date</label>
+        <input type="date" name="toDate" value="@ViewBag.ToDate" class="form-control"/>
+    </div>
+
+    <div class="col-md-4 mt-4">
+        <button class="btn btn-primary">Search</button>
+        <a asp-controller="ComicBooks" asp-action="Index" class="btn btn-secondary">Back</a>
+    </div>
+</form>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Customer</th>
+        <th>Phone</th>
+        <th>Comic Book</th>
+        <th>Rental Date</th>
+        <th>Return Date</th>
+        <th>Quantity</th>
+        <th>Price/Day</th>
+        <th>Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var rental in Model)
+    {
+        foreach (var detail in rental.RentalDetails ?? new List<T2502E_Nguyen_Van_Linh_dotNet_Core.Models.RentalDetail>())
+        {
+            var days = (rental.ReturnDate - rental.RentalDate).Days;
+            if (days <= 0) days = 1;
+
+            var total = days * detail.Quantity * detail.PricePerDay;
+
+            <tr>
+                <td>@rental.Customer?.FullName</td>
+                <td>@rental.Customer?.PhoneNumber</td>
+                <td>@detail.ComicBook?.Title</td>
+                <td>@rental.RentalDate.ToString("dd/MM/yyyy")</td>
+                <td>@rental.ReturnDate.ToString("dd/MM/yyyy")</td>
+                <td>@detail.Quantity</td>
+                <td>@detail.PricePerDay</td>
+                <td>@total</td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
